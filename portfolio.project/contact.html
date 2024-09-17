@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    input[type=text],input[type=email],textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical
+
+    }
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    .boxcontainer {
+      border-radius: 5px;
+      padding: 20px 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- nav bar left section -->
+      <div class="left">
+        <!-- logo for my portfolio -->
+        <div class="logosection">
+          <i class="logo"><img src="signature (3).png" alt="logo"></i>
+        </div>
+      </div>
+
+
+      <!-- navbar right -->
+      <div class="right">
+
+        <input type="checkbox" id="sidebar">
+        <!-- open side bar hamburger menu -->
+        <label for="sidebar" class="checkbtn">
+          <i class="open"><img src="hamburgermenu.png" alt=""></i>
+        </label>
+
+        <!-- links for navbar -->
+        <div class="contentofnavbar">
+          <ul>
+            <label for="sidebar" class="crossbutton">
+              <i class="close"><img src="close.png" alt=""></i>
+            </label>
+            <li><a href="http://127.0.0.1:5500/index.html">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="boxcontainer">
+    <form action="#">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="enter your email..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+</body>
+
+</html>
